@@ -23,7 +23,7 @@
   font-family: "Shorelines Script";
   src: url("../fonts/ShorelinesScript-Bold.woff2") format("woff2"),
        url("../fonts/ShorelinesScript-Bold.woff") format("woff"),
-       url("../fonts/ShorelinesScript-Bold.ttf") format("truetype");
+       url("../fonts/ShorelinesScript-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
