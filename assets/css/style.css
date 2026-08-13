@@ -673,7 +673,7 @@ main { padding: 0 0 3rem; }
 .pub-note { font-size: 0.85rem; color: var(--color-text-light); font-style: italic; }
 
 .ads-button-wrap { text-align: center; margin: 2.5rem 0 1rem; }
-.ads-button-wrap-right { text-align: right; margin: 0.4rem 0 1.5rem; }
+.ads-button-wrap-right { text-align: right; margin: 0.4rem 0 0.3rem; }
 .page-top-space { padding-top: 1.4rem; }
 .ads-button {
   display: inline-block;
