@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Products — Katherine E. Whitaker</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-title">katherine emily whitaker</a>
+    <p class="tagline">Professor of Astronomy</p>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="research-group.html">Research Group</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="cv.html">Curriculum Vitae</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="outreach.html">Outreach</a>
+      <a href="mentoring-resources.html">Mentoring Resources</a>
+      <a href="news/index.html">News</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-banner page-banner-short">
+  <img src="assets/images/banner_uncover_github_v3_short.jpg" alt="JWST UNCOVER survey banner">
+</div>
+
+<main class="page-wrap text-compact">
+  <h1>Data Products</h1>
+
+  <ul>
+    <li><strong>[NEW RELEASE] 3D-Herschel Survey</strong> (<a href="https://zenodo.org/records/20706940" target="_blank" rel="noopener">Link to data</a>; <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260222384M/abstract" target="_blank" rel="noopener">McNulty et al. 2026</a>): This release provides UV-to-far-infrared (UV-FIR) photometric catalogs for galaxies in four CANDELS/3D-HST extragalactic fields: COSMOS, GOODS-South, GOODS-North, and UDS. These catalogs extend the UV-to-MIR 3D-HST photometric catalogs (Skelton et al. 2014) with Spitzer/MIPS 24 micron photometry (Whitaker et al. 2014) and Herschel/PACS+SPIRE far-infrared photometry (70&ndash;350 micron). Also included are stellar population parameters derived from an emulator trained to reproduce Prospector SED modeling results, fit to both the full UV-FIR photometry and to catalogs limited to UV-24 micron. More information can be found <a href="https://www.astrowhit.com/s/README.txt" target="_blank" rel="noopener">in this file</a>, including acknowledgements for publications based on these data products.</li>
+
+    <li><strong>UNCOVER Treasury Survey</strong> (<a href="https://jwst-uncover.github.io/" target="_blank" rel="noopener">Link to data</a>; <a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221204026B/abstract" target="_blank" rel="noopener">Bezanson et al. 2025</a>, <a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230102671W/abstract" target="_blank" rel="noopener">Weaver et al. 2024</a>): All data releases from the Cycle 1 JWST UNCOVER Treasury Program are hosted at <a href="https://jwst-uncover.github.io/#releases" target="_blank" rel="noopener">jwst-uncover.github.io</a>. Part 1 of the survey is pre-imaging of the Abell 2744 cluster taken in November 2022, used to identify interesting objects to follow up with spectroscopy as Part 2, with observations executed July 29, 2023.
+      <ul>
+        <li><em>Supplementary Data Releases:</em>
+          <ul>
+            <li><strong>MegaScience Survey</strong> (<a href="https://www.stsci.edu/jwst-program-info/program/?program=4111" target="_blank" rel="noopener">Link to data</a>; <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...976..101S/abstract" target="_blank" rel="noopener">Suess et al. 2024</a>) added to the NIRCam photometry, upgrading the survey such that we now have contiguous wavelength coverage from 0.7 to 5 microns via all 20 NIRCam filters, featuring 12 medium-bandwidth filters.</li>
+          </ul>
+        </li>
+        <li><em>Datasets Coming Soon:</em>
+          <ul>
+            <li><strong>MINDTHEGAP Survey</strong> (<a href="https://www.stsci.edu/hst-program-info/program/?program=17730" target="_blank" rel="noopener">Link to data</a>; HST-GO-17730, PI: Whitaker) added deep HST F336W imaging covering the full UNCOVER mosaic. Observations finished execution in June 2026.</li>
+            <li><strong>UNCOVERed Survey</strong> (<a href="https://www.stsci.edu/jwst/science-execution/program-information?id=11373" target="_blank" rel="noopener">Link to data</a>; JWST-GO-11373, PI: Whitaker) will add deep, contiguous JWST/MIRI imaging from 5 to 18 microns across the full UNCOVER field of view. Observations are scheduled for November 2026.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li><strong>Literature Compilation of Dust and CO Measurements</strong> (<a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...910L...7C/abstract" target="_blank" rel="noopener">Caliendo et al. 2021, ApJL, 910, 7</a>): Results of a literature search to collate a sample of galaxies with measured molecular gas reservoirs and star formation rates. <a href="https://www.astrowhit.com/s/caliendo_compilation_7-2021.csv" target="_blank" rel="noopener">In this file</a>, we summarize our composite reference sample, including the redshift and sample selection. The compilation includes citations to original publications (column 2), H2 tracer employed (either dust or CO; column 3), redshift (column 4), logarithm of the stellar mass in units of solar masses (column 5), star formation rates in units of solar mass per year (column 6), and molecular gas fraction (column 7).</li>
+
+    <li><strong>Erratum for Whitaker et al. 2014b SFR&ndash;M* Relation Polynomial Fits</strong>: The level of precision in Table 1 of Whitaker et al. 2014 is not adequate to reproduce the best-fit curves. Please use the following values (Erratum to be published shortly).
+      <p>a = [-27.4020, -26.0395, -24.0415, -19.9898]<br>
+      b = [5.0215, 4.6179, 4.1693, 3.4422]<br>
+      c = [-0.2196, -0.1904, -0.1638, -0.1299]</p>
+    </li>
+
+    <li><strong>Hubble Legacy Fields GOODS-S Data Release (v1.0)</strong> (<a href="https://archive.stsci.edu/prepds/hlf/" target="_blank" rel="noopener">Link to data</a>; Illingworth et al. 2016): Deep images from the v1.0 data release of the Hubble Legacy Fields (HLF) project for the GOODS-South (ECDF-S) region from the HST archival program AR-13252, combining exposures from Hubble&rsquo;s ACS/WFC and WFC3/IR taken over more than a decade between mid-2002 and the end of 2015. HLF includes essentially all optical and infrared data taken by Hubble over the original CDF-South region including GOODS-S, CANDELS, ERS, ECDF-S, and many other programs.
+      <ul>
+        <li><strong>Update [May 2020]</strong>: v2.1 photometric catalog is released that includes new sources in the F606W, F775W, and F850LP filters in the shallow but wide area coverage.</li>
+      </ul>
+    </li>
+
+    <li><strong>3D-HST Full Data Release (v4.1.5)</strong> (<a href="http://3dhst.research.yale.edu/Data.html" target="_blank" rel="noopener">Link to data</a>; Momcheva et al. 2015): Data can be <a href="http://3dhst.research.yale.edu/Publications_files/3dhst_whitaker14_sfr.dat" target="_blank" rel="noopener">downloaded here</a>, with a full description of the data and methods found <a href="http://adsabs.harvard.edu/abs/2015arXiv151002106M" target="_blank" rel="noopener">here</a>. This release covers all five 3D-HST/CANDELS fields (AEGIS, COSMOS, GOODS-N, GOODS-S, and UDS), including extracted WFC3 2D and 1D spectra from ~250,000 objects; redshifts based on joint fits to the grism spectra and photometry for ~100,000 objects down to JH=26; emission line fits to all major emission lines down to JH=26; a best redshift catalog combining spectroscopic, grism, and photometric redshifts across the five fields; stellar masses, UV+IR SFRs, and rest-frame colors in 22 bands for the grism redshift and best redshift catalogs; and extracted ACS 2D and 1D spectra for ~25,000 objects.</li>
+
+    <li><strong>Star Formation Rates (UV+IR) from 3D-HST</strong> (<a href="http://3dhst.research.yale.edu/Publications_files/3dhst_whitaker14_sfr.dat" target="_blank" rel="noopener">Link to data</a>; Whitaker et al. 2014): Data from Table 2 can be downloaded. All star formation rates and luminosities are logarithmic, with units of solar mass per year and solar luminosities, respectively. Please refer to the manuscript for more details on the stacking analyses and assumptions when deriving the measured UV+IR SFRs. The full 3D-HST UV+IR SFR catalogs from Spitzer/MIPS 24 micron photometry were released in October 2015, along with the full 3D-HST data repository.</li>
+
+    <li><strong>3D-HST Photometric Catalog Release (v4.1)</strong> (<a href="http://3dhst.research.yale.edu/Data.html" target="_blank" rel="noopener">Link to data</a>; Skelton et al. 2014): This release includes all five CANDELS/3D-HST fields (AEGIS, COSMOS, GOODS-N, GOODS-S, and UDS). The data products include 0.3&ndash;8 micron photometric catalogs based on WFC3 detections for &gt;200,000 objects, photometric redshifts, stellar masses and other FAST SED-derived parameters, rest-frame colors in 22 bands, new WFC3 mosaics in F125W, F140W, and F160W with an array of weight maps and masks, and matched ancillary images in 87 different bands, including HST/ACS, ground-based, and Spitzer/IRAC data.</li>
+
+    <li><strong>Composite Quiescent Spectra from 3D-HST</strong> (<a href="http://3dhst.research.yale.edu/Publications_files/kewhitaker_2013_all_quiescent_median_stack_z1.4-2.2.dat" target="_blank" rel="noopener">Link to data</a>; Whitaker et al. 2013): Data from the rest-frame median stacks of the grism spectra of 171 quiescent galaxies at 1.4&lt;z&lt;2.2 can be downloaded.</li>
+
+    <li><strong>3D-HST Data Release (v0.5)</strong> (<a href="http://3dhst.research.yale.edu/Data_v0.5.html" target="_blank" rel="noopener">Link to data</a>; Brammer et al. 2012): This release includes the deepest WFC3 G141 spectroscopic data in existence, using 8&ndash;17 orbit depth observations in the Hubble Ultra Deep Field. Contamination-corrected 2D and 1D spectra for &gt;250 objects in the HUDF are available, as well as best-fit EAZY model spectra and a catalog of derived redshifts.</li>
+
+    <li><strong>NEWFIRM Medium-Band Survey Full Data Release (v5.1)</strong> (<a href="http://www.astro.yale.edu/nmbs" target="_blank" rel="noopener">Link to data</a>; Whitaker et al. 2011): Includes all photometry, photometric redshifts, rest-frame colors, stellar population parameters, and UV+IR star-formation rates.</li>
+  </ul>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img class="footer-image" src="https://images.squarespace-cdn.com/content/v1/5d52c6d48e6188000186d689/1565708658695-VCF7NMDGM3JWOLYJODRC/image-asset.jpeg" alt="Katherine E. Whitaker">
+    <div class="footer-contact">
+      <p><strong>Katherine E. Whitaker</strong></p>
+      <p>Email: <a href="mailto:kwhitaker@astro.umass.edu">kwhitaker@astro.umass.edu</a></p>
+      <p>Office: LGRT-524 &middot; Phone: +1 (413) 545-3556</p>
+      <p>710 North Pleasant Street, Astronomy Department, LGRT-524<br>University of Massachusetts, Amherst, MA 01003</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

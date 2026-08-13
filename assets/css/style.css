@@ -93,6 +93,8 @@ hr {
 
 main { padding: 0 0 3rem; }
 
+.text-compact p { font-size: 0.93em; }
+
 /* ---------- Header ---------- */
 .site-header {
   background: var(--color-bg);
@@ -328,14 +330,22 @@ main { padding: 0 0 3rem; }
 }
 .feature-audio {
   display: block;
-  width: calc((100% - 326px) * 0.7);
-  margin-left: calc(326px + (100% - 326px) * 0.15);
+  width: calc((100% - 326px) * 0.6);
+  margin-left: calc(326px + (100% - 326px) * 0.2);
 }
 .video-embed {
   float: left;
   width: 300px;
   height: 169px;
   margin: 0.3rem 1.6rem 1rem 0;
+  border: 2px solid #999;
+  border-radius: 4px;
+}
+.video-embed-vertical {
+  float: left;
+  width: 220px;
+  height: 391px;
+  margin: -0.6rem 1.6rem 1rem 0;
   border: 2px solid #999;
   border-radius: 4px;
 }
@@ -348,8 +358,9 @@ main { padding: 0 0 3rem; }
 @media (max-width: 640px) {
   .headshot-block { float: none; width: 200px; margin: 0 auto 1.2rem; }
   .feature-image { float: none; width: 100%; max-width: 320px; margin: 0 auto 1rem; display: block; }
-  .feature-audio { width: 70%; margin-left: auto; margin-right: auto; }
+  .feature-audio { width: 60%; margin-left: auto; margin-right: auto; }
   .video-embed { float: none; width: 100%; max-width: 320px; height: 180px; margin: 0 auto 1rem; display: block; }
+  .video-embed-vertical { float: none; width: 100%; max-width: 240px; height: 427px; margin: 0 auto 1rem; display: block; }
   .deadline-note { margin-left: 0; }
 }
 
@@ -393,6 +404,7 @@ main { padding: 0 0 3rem; }
   transition: filter 0.2s ease;
 }
 .news-card:hover img { filter: grayscale(0%); }
+.news-card img.crop-left { object-position: left; }
 .news-card .news-card-text { min-width: 0; }
 .news-card .news-card-title {
   display: block;
@@ -494,7 +506,7 @@ main { padding: 0 0 3rem; }
   width: 100%;
   height: 460px;
   object-fit: cover;
-  object-position: center;
+  object-position: center 25%;
   border: 2px solid #999;
   border-radius: 4px;
   margin: 0.5rem 0 1rem;
@@ -525,9 +537,22 @@ main { padding: 0 0 3rem; }
 /* ---------- Publications list ---------- */
 .pub-year { margin-top: 2rem; font-family: var(--serif); color: var(--color-accent); border-bottom: none; }
 .pub-list { list-style: none; padding: 0; }
-.pub-list li { margin: 0.9em 0; font-size: 0.95rem; }
+.pub-list li { margin: 0.7em 0; font-size: 0.82rem; line-height: 1.45; }
 .pub-list .pub-title { font-weight: 600; }
 .pub-note { font-size: 0.85rem; color: var(--color-text-light); font-style: italic; }
+
+.ads-button-wrap { text-align: center; margin: 2.5rem 0 1rem; }
+.ads-button {
+  display: inline-block;
+  padding: 0.7em 1.6em;
+  background: var(--color-accent-dark);
+  color: #fff;
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.ads-button:hover { opacity: 0.85; text-decoration: none; }
 
 /* ---------- Misc content blocks ---------- */
 .callout {
