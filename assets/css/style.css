@@ -271,6 +271,37 @@ main { padding: 0 0 3rem; }
   .home-gallery img { grid-column: auto !important; grid-row: auto !important; height: 190px; }
 }
 
+.teaching-gallery {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  height: 480px;
+  gap: 6px;
+  margin: 1rem 0 1.8rem;
+}
+.teaching-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #999;
+  filter: grayscale(15%);
+  transition: filter 0.2s ease;
+}
+.teaching-gallery img:hover { filter: grayscale(0%); }
+
+.tg-1 { grid-column: 1 / 4;  grid-row: 1 / 11; }
+.tg-2 { grid-column: 4 / 6;  grid-row: 1 / 3;  }
+.tg-3 { grid-column: 4 / 6;  grid-row: 3 / 5;  }
+.tg-4 { grid-column: 6 / 11; grid-row: 1 / 5;  }
+.tg-5 { grid-column: 4 / 7;  grid-row: 5 / 11; }
+.tg-6 { grid-column: 7 / 9;  grid-row: 5 / 11; }
+.tg-7 { grid-column: 9 / 11; grid-row: 5 / 11; }
+
+@media (max-width: 800px) {
+  .teaching-gallery { grid-template-columns: repeat(2, 1fr); grid-template-rows: none; height: auto; }
+  .teaching-gallery img { grid-column: auto !important; grid-row: auto !important; height: 160px; }
+}
+
 .image-strip {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -284,8 +315,13 @@ main { padding: 0 0 3rem; }
   filter: grayscale(10%);
 }
 .gallery-5col { grid-template-columns: repeat(5, 1fr); }
+.gallery-6col { grid-template-columns: repeat(6, 1fr); }
 @media (max-width: 900px) {
   .gallery-5col { grid-template-columns: repeat(3, 1fr); }
+  .gallery-6col { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 560px) {
+  .gallery-6col { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 560px) {
   .gallery-5col { grid-template-columns: repeat(2, 1fr); }
@@ -577,6 +613,19 @@ figcaption { font-size: 0.85rem; color: var(--color-text-light); margin-top: 0.3
 }
 @media (max-width: 640px) {
   .figure-float { float: none; width: 100%; max-width: 320px; margin: 0 auto 1rem; }
+}
+
+.figure-float-right {
+  float: right;
+  width: 240px;
+  margin: 0.3rem 0 1rem 1.6rem;
+}
+.figure-float-right img {
+  border-radius: 4px;
+  filter: grayscale(10%);
+}
+@media (max-width: 640px) {
+  .figure-float-right { float: none; width: 100%; max-width: 320px; margin: 0 auto 1rem; }
 }
 
 iframe { max-width: 100%; }
