@@ -602,7 +602,7 @@ main { padding: 0 0 3rem; }
   max-width: 100%;
   margin: 0.5rem auto 1rem;
 }
-.astrowit-graphic + blockquote {
+.group-photo + blockquote {
   text-align: center;
   max-width: 500px;
   margin-left: auto;
@@ -611,8 +611,8 @@ main { padding: 0 0 3rem; }
 
 .group-photo {
   display: block;
-  width: 80%;
-  height: 368px;
+  width: 88%;
+  height: 405px;
   object-fit: cover;
   object-position: center 35%;
   border: 2px solid #999;
