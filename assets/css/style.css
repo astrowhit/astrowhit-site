@@ -59,7 +59,7 @@ h1, h2, h3, h4 {
 }
 h1 { font-size: 2.1rem; }
 h2 { font-size: 1.55rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.3em; }
-h2.no-underline { border-bottom: none; padding-bottom: 0; }
+h2.no-underline { border-bottom: none; padding-bottom: 0; font-size: 1.3rem; }
 .heading-date { font-size: 0.6em; font-weight: 400; color: var(--color-text-light); }
 .semester-note { font-size: 0.65em; font-weight: 400; }
 h3 { font-size: 1.2rem; }
@@ -423,7 +423,7 @@ main { padding: 0 0 3rem; }
 .video-embed-vertical {
   float: left;
   width: 220px;
-  height: 391px;
+  height: 378px;
   margin: -0.6rem 1.6rem 1rem 0;
   border: 2px solid #999;
   border-radius: 4px;
@@ -616,7 +616,8 @@ main { padding: 0 0 3rem; }
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin: 1rem 0 1.5rem;
+  width: 90%;
+  margin: 1rem auto 1.5rem;
 }
 .astrowit-row .astrowit-graphic {
   width: 280px;
@@ -632,7 +633,7 @@ main { padding: 0 0 3rem; }
 
 .group-photo {
   display: block;
-  width: 100%;
+  width: 90%;
   height: 405px;
   object-fit: cover;
   object-position: center 35%;
