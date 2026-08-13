@@ -668,9 +668,19 @@ figcaption { font-size: 0.85rem; color: var(--color-text-light); margin-top: 0.3
   filter: grayscale(10%);
 }
 .figure-float-right.figure-large { width: 400px; }
+.figure-float-right.figure-square { width: 300px; }
+.figure-float-right.figure-square img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center bottom;
+}
+.figure-float-right.figure-square figcaption { font-style: italic; }
 @media (max-width: 640px) {
   .figure-float-right { float: none; width: 100%; max-width: 320px; margin: 0 auto 1rem; }
   .figure-float-right.figure-large { max-width: 400px; }
+  .figure-float-right.figure-square { max-width: 300px; }
+  .figure-float-right.figure-square img { height: 260px; }
 }
 
 iframe { max-width: 100%; }
