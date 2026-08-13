@@ -90,11 +90,12 @@ blockquote.plain-quote {
 }
 blockquote.plain-quote p { margin: 0.9em 0; }
 
-blockquote.quote-large { font-family: var(--sans); font-size: 1.7rem; line-height: 1.3; font-weight: 200; text-align: center; border-left: none; padding: 0.2em 0; }
+blockquote.quote-large { font-family: var(--serif); font-size: 1.7rem; line-height: 1.3; text-align: center; border-left: none; padding: 0.2em 0; }
 @media (max-width: 640px) {
   blockquote.quote-large { font-size: 1.25rem; }
 }
 .quote-attribution { font-size: 0.55em; }
+.quote-source { font-size: 0.7em; }
 
 .underline-links a { text-decoration: underline; }
 
@@ -396,6 +397,8 @@ main { padding: 0 0 3rem; }
   color: var(--color-text-light);
   margin-top: 0.5rem;
 }
+.feature-figure-wide { width: 340px; }
+.feature-figure-crop-shift img { aspect-ratio: 100/66; object-fit: cover; object-position: center 83%; }
 .feature-image {
   float: left;
   width: 300px;
@@ -424,6 +427,12 @@ main { padding: 0 0 3rem; }
   margin: -0.6rem 1.6rem 1rem 0;
   border: 2px solid #999;
   border-radius: 4px;
+  overflow: hidden;
+}
+.video-embed-vertical iframe {
+  width: 220px;
+  height: 430px;
+  border: none;
 }
 .deadline-note {
   margin-left: 326px;
@@ -602,11 +611,23 @@ main { padding: 0 0 3rem; }
   max-width: 100%;
   margin: 0.5rem auto 1rem;
 }
-.group-photo + blockquote {
-  text-align: center;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+
+.astrowit-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0 1.5rem;
+}
+.astrowit-row .astrowit-graphic {
+  width: 280px;
+  margin: 0;
+  flex-shrink: 0;
+}
+.astrowit-row blockquote {
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .astrowit-row { flex-direction: column; }
 }
 
 .group-photo {
