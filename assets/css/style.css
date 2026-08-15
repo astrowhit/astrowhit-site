@@ -680,14 +680,14 @@ main { padding: 0 0 3rem; }
   margin: 2.2em 0 1.6rem;
 }
 .intro-box-tight {
-  padding: 1.2rem;
+  padding: 0.7rem 1.2rem;
 }
 .pub-summary-box {
   background: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: 4px;
   padding: 1rem 1.3rem;
-  margin: 0 0 1.6rem;
+  margin: 0 0 0.32rem;
 }
 .pub-summary-box p { margin: 0; }
 .pub-summary-box p + p { margin-top: 0.5rem; }
