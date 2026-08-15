@@ -345,6 +345,8 @@ main { padding: 0 0 3rem; }
 .hr-tight-bottom { margin-bottom: 0.6em; }
 .heading-tight { margin-top: 0.6em; margin-bottom: 0.5em; }
 .image-strip-tight-top { margin-top: 0.5rem; }
+.research-projects-list ul li { font-size: 0.8rem; }
+.uncover-sublist li:nth-child(-n+3) { line-height: 0.9; margin: 0.1em 0; }
 @media (max-width: 900px) {
   .gallery-5col { grid-template-columns: repeat(3, 1fr); }
   .gallery-6col { grid-template-columns: repeat(3, 1fr); }
