@@ -566,6 +566,13 @@ main { padding: 0 0 3rem; }
   filter: grayscale(20%);
 }
 .person .person-body h3 { margin-top: 0; }
+.headshot-placeholder {
+  width: 170px;
+  height: 170px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #e6e6e6;
+}
 .person .role { color: var(--color-text-light); font-style: italic; margin: -0.4em 0 0.6em; font-size: 0.88rem; }
 .person .person-body p { font-size: 0.9rem; }
 
