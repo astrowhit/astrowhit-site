@@ -811,3 +811,12 @@ table th, table td { border: 1px solid var(--color-border); padding: 0.5rem 0.7r
 
 /* Full-width cropped lead image on news articles */
 .article-hero { width: 100%; aspect-ratio: 2 / 1; object-fit: cover; object-position: center 45%; margin: 1rem 0; }
+
+/* Small floated headshot compilation in news articles */
+.headshot-figure { float: right; width: 230px; margin: 0.3rem 0 1rem 1.4rem; }
+.headshot-figure .headshot-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; }
+.headshot-figure figure { margin: 0; text-align: center; }
+.headshot-figure img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 4px; filter: grayscale(20%); }
+.headshot-figure figcaption { font-size: 0.7rem; line-height: 1.2; margin-top: 0.2rem; }
+.headshot-figure > .caption { font-size: 0.75rem; margin: 0.4rem 0 0; }
+@media (max-width: 640px) { .headshot-figure { float: none; width: 100%; max-width: 320px; margin: 1rem auto; } }
