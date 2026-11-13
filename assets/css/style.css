@@ -811,3 +811,15 @@ table th, table td { border: 1px solid var(--color-border); padding: 0.5rem 0.7r
 
 /* Full-width cropped lead image on news articles */
 .article-hero { width: 100%; aspect-ratio: 2 / 1; object-fit: cover; object-position: center 45%; margin: 1rem 0; }
+
+/* Gallery grid with one large featured image on the right */
+.feature-gallery { display: grid; grid-template-columns: repeat(3, 1fr) 2fr; gap: 0.5rem; margin: 1.2rem 0 0.4rem; }
+.feature-gallery a { display: block; }
+.feature-gallery img { width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px; }
+.feature-gallery .featured { grid-column: 4; grid-row: 1 / span var(--rows, 2); }
+.feature-gallery .featured img { aspect-ratio: auto; }
+@media (max-width: 700px) {
+  .feature-gallery { grid-template-columns: repeat(2, 1fr); }
+  .feature-gallery .featured { grid-column: 1 / -1; grid-row: 1; }
+  .feature-gallery .featured img { aspect-ratio: 4 / 3; }
+}
